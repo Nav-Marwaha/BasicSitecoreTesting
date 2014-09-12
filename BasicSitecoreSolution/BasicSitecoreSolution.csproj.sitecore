@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <Site Server="basicsitecoresetup" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Views\PageHeader.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{E3A5343E-3D48-42D6-BEBA-8F67243FD5BC}</Item>
+    </File>
+    <File Include="Views\Components\Spotlight.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{70C72002-A035-4099-8B30-DF1A46C424D0}</Item>
+    </File>
+  </ItemGroup>
+</Project>

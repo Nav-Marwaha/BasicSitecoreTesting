@@ -1,0 +1,12 @@
+﻿@model List<BasicSitecoreSolution.Models.PropertySummary>
+
+@foreach (var property in @Model)
+{
+    <div><p><b>@property.Cost</b></p></div>
+    <div><p><b>Area: @property.Area</b></p></div>
+    <div><p><b>Number of Bedrooms: @property.NumberOfBedrooms</b></p></div>
+    <div><p><b>Property Type: @property.PropertyType</b></p></div>
+    <div><p><b>@property.PostCode</b></p></div>
+
+
+}

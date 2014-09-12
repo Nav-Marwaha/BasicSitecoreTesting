@@ -1,0 +1,13 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model RenderingModel
+
+<html>
+    <head>
+        <title>@Model.Item.Fields["Title"]</title>
+        
+    </head>
+    <body>
+        <h1>@Html.Sitecore().Field("Title")</h1>
+    </body>
+</html>
