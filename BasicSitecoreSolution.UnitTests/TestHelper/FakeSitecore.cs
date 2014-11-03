@@ -36,8 +36,22 @@ namespace BasicSitecoreSolution.UnitTests.TestHelper
 
             return new Item[]
                        {
-                           new ShimItem {IDGet = () => new ID(Guid.NewGuid()), NameGet = () => "TestItem1", TemplateNameGet = () => "Semi-Detached House", FieldsGet = () => this.GetTestFieldCollection(1), PathsGet = () => paths1},
-                           new ShimItem {IDGet = () => new ID(Guid.NewGuid()), NameGet = () => "TestItem2", TemplateNameGet = () => "Terraced House", FieldsGet = () => this.GetTestFieldCollection(2), PathsGet = () => paths2}
+                           new ShimItem
+                               {
+                                   IDGet = () => new ID(Guid.NewGuid()), 
+                                   NameGet = () => "TestItem1", 
+                                   TemplateNameGet = () => "Semi-Detached House", 
+                                   FieldsGet = () => this.GetTestFieldCollection(1), 
+                                   PathsGet = () => paths1
+                               },
+                           new ShimItem
+                               {
+                                   IDGet = () => new ID(Guid.NewGuid()), 
+                                   NameGet = () => "TestItem2", 
+                                   TemplateNameGet = () => "Terraced House", 
+                                   FieldsGet = () => this.GetTestFieldCollection(2), 
+                                   PathsGet = () => paths2
+                               }
                        };
         }
 
@@ -61,10 +75,15 @@ namespace BasicSitecoreSolution.UnitTests.TestHelper
             var fields = new List<Field>
                              {
                                  new ShimField { IDGet = () => new ID(), NameGet = () => "Cost",               DisplayNameGet = () => "Cost", ValueGet = () => "200000" },
+
                                  new ShimField { IDGet = () => new ID(), NameGet = () => "Area",                DisplayNameGet = () => "Area", ValueGet = () => "London" },
+
                                  new ShimField { IDGet = () => new ID(), NameGet = () => "Number Of Bedrooms",  DisplayNameGet = () => "Number Of Bedrooms", ValueGet = () => i.ToString() },
+
                                  new ShimField { IDGet = () => new ID(), NameGet = () => "Post code",           DisplayNameGet = () => "Post code", ValueGet = () => "Ec1 1ah" },
+
                                  new ShimField { IDGet = () => new ID(), NameGet = () => "__Updated By",        DisplayNameGet = () => "__Updated By", ValueGet = () => "Someone" },
+
                                  new ShimField { IDGet = () => new ID(), NameGet = () => "Empty Field",         DisplayNameGet = () => "Empty Field", ValueGet = () => null },
                              };
 
